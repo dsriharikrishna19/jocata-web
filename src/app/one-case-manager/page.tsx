@@ -123,17 +123,10 @@ export default function OneCaseManagerPage() {
               </div>
             </FadeIn>
 
-            {/* Right: Laptop Slider */}
+            {/* Right: Slider */}
             <FadeIn delay={0.2} className="relative">
-              {/* Laptop Frame Effect */}
-              <div className="relative mx-auto max-w-[550px]">
-                {/* Glossy bezel shell */}
-                <div className="aspect-[16/10] w-full rounded-2xl border-[12px] border-neutral-800 bg-neutral-900 shadow-2xl relative overflow-hidden ring-1 ring-white/10">
-                  <CaseManagerSlider />
-                </div>
-                {/* Laptop Base */}
-                <div className="relative mx-auto h-3 w-[110%] -translate-x-[4.5%] rounded-b-xl border-t border-white/10 bg-gradient-to-b from-neutral-800 to-neutral-700 shadow-xl" />
-                <div className="relative mx-auto h-2 w-[20%] rounded-b-xl bg-neutral-800 opacity-50" />
+              <div className="relative mx-auto w-full max-w-[600px] rounded-2xl shadow-2xl overflow-hidden ring-1 ring-white/10">
+                <CaseManagerSlider />
               </div>
             </FadeIn>
 

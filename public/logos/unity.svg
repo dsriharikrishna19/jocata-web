@@ -1,0 +1,5 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
+  <rect width="240" height="80" fill="none"/>
+  <polygon points="20,50 40,20 60,50" fill="none" stroke="#f5a623" stroke-width="3"/>
+  <text x="75" y="50" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#1a1a1a">UNITY</text>
+</svg>

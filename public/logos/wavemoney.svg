@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
+  <rect width="240" height="80" fill="none"/>
+  <circle cx="30" cy="40" r="16" fill="#00a651"/>
+  <text x="55" y="38" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#1a1a1a">wave</text>
+  <text x="55" y="56" font-family="Arial,sans-serif" font-size="13" fill="#555">money</text>
+</svg>

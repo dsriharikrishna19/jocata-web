@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
+  
+  --color-primary: #0a0a0a;
+  --color-primary-foreground: #ffffff;
+  
+  --color-secondary: #f4f4f5;
+  --color-secondary-foreground: #09090b;
+
+  --color-accent: #f4f4f5;
+  --color-accent-foreground: #09090b;
+
+  --color-muted: #f4f4f5;
+  --color-muted-foreground: #71717a;
+
+  --color-border: #e2e2e7;
+  --color-input: #e2e2e7;
+  --color-ring: #0a0a0a;
+
+  --radius-lg: 0.75rem;
+  --radius-md: calc(0.75rem - 2px);
+  --radius-sm: calc(0.75rem - 4px);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    /* Premium Light Mode Gradient */
+    background-image: radial-gradient(circle at 50% -20%, rgba(0, 0, 0, 0.02), #ffffff 70%);
+    background-attachment: fixed;
+  }
+}
+
+/* Custom Thin Scrollbar */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: light-dark(#d4d4d4, #323232) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: light-dark(#a3a3a3, #323232);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: light-dark(#737373, #464646);
+  }
+
+  /* Slow spin for illustration ring */
+  .animate-spin-slow {
+    animation: spin 10s linear infinite;
+  }
+
+  /* Fade-in for tab content */
+  .animate-fadeIn {
+    animation: fadeInUp 0.3s ease-out both;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Lenis Recommended Styles */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
